@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cvTweet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgAvatar"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_outline_person_24" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Umulisa Pascaline"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/imgAvatar"
+            app:layout_constraintTop_toTopOf="@+id/imgAvatar" />
+
+        <TextView
+            android:id="@+id/tvHandle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="kayitete"
+            app:layout_constraintStart_toEndOf="@+id/tvName"
+            app:layout_constraintTop_toTopOf="@+id/tvName" />
+
+        <TextView
+            android:id="@+id/tvTweet"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tvName"
+            app:layout_constraintTop_toBottomOf="@+id/tvHandle"
+            tools:text="Day 35/100, added validation to a sign-up page with JavaScript. I practiced more about looping through elements and performing the same action on each. " />
+
+        <ImageView
+            android:id="@+id/imgReply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="@+id/tvTweet"
+            app:layout_constraintTop_toBottomOf="@+id/tvTweet"
+            app:srcCompat="@drawable/ic_comment_regular" />
+
+        <TextView
+            android:id="@+id/tvReply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgReply"
+            app:layout_constraintStart_toEndOf="@+id/imgReply"
+            app:layout_constraintTop_toTopOf="@+id/imgReply" />
+
+        <ImageView
+            android:id="@+id/imgRetweet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            app:layout_constraintStart_toEndOf="@+id/tvReply"
+            app:layout_constraintTop_toTopOf="@+id/tvReply"
+            app:srcCompat="@drawable/ic_retweet_solid" />
+
+        <TextView
+            android:id="@+id/tvRetweet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgRetweet"
+            app:layout_constraintStart_toEndOf="@+id/imgRetweet"
+            app:layout_constraintTop_toTopOf="@+id/imgRetweet" />
+
+        <ImageView
+            android:id="@+id/imgLike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            app:layout_constraintStart_toEndOf="@+id/tvRetweet"
+            app:layout_constraintTop_toTopOf="@+id/tvRetweet"
+            app:srcCompat="@drawable/ic_heart_regular" />
+
+        <TextView
+            android:id="@+id/tvLike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgLike"
+            app:layout_constraintStart_toEndOf="@+id/imgLike"
+            app:layout_constraintTop_toTopOf="@+id/imgLike" />
+
+        <!--        <ImageView-->
+        <!--            android:id="@+id/imgShare"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginStart="32dp"-->
+        <!--            app:layout_constraintStart_toEndOf="@+id/tvLike"-->
+        <!--            app:layout_constraintTop_toTopOf="@+id/tvLike"-->
+        <!--            app:srcCompat="@drawable/ic_arrow_up_from_bracket_solid" />-->
+        <!--        <TextView-->
+        <!--            android:id="@+id/tvShare"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginStart="4dp"-->
+        <!--            app:layout_constraintBottom_toBottomOf="@+id/imgShare"-->
+        <!--            app:layout_constraintStart_toEndOf="@+id/imgShare"-->
+        <!--            app:layout_constraintTop_toTopOf="@+id/imgShare" />-->
+
+        <!--        <ImageView-->
+        <!--            android:id="@+id/imgAnalytic"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginStart="32dp"-->
+        <!--            app:layout_constraintStart_toEndOf="@+id/tvShare"-->
+        <!--            app:layout_constraintTop_toTopOf="@+id/tvShare"-->
+        <!--            app:srcCompat="@drawable/ic_chart_simple_solid" />-->
+        <!--        <TextView-->
+        <!--            android:id="@+id/tvAnalytics"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginStart="4dp"-->
+        <!--            app:layout_constraintBottom_toBottomOf="@+id/imgAnalytic"-->
+        <!--            app:layout_constraintStart_toEndOf="@+id/imgAnalytic"-->
+        <!--            app:layout_constraintTop_toTopOf="@+id/imgAnalytic" />-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
