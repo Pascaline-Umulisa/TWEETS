@@ -37,6 +37,7 @@ class TweetAdapter(var TweetsList:List<Tweet>):RecyclerView.Adapter<TweetViewHol
         }
         holder.imgLike.setOnClickListener {
             currentTweet.like()
+            holder.imgLike.setImageResource(R.drawable.ic_heart_solid)
             holder.tvLike.text = currentTweet.likes.toString()
 
 
