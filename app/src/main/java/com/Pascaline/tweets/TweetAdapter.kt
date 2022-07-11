@@ -37,10 +37,10 @@ class TweetAdapter(var TweetsList:List<Tweet>):RecyclerView.Adapter<TweetViewHol
         }
         holder.imgLike.setOnClickListener {
             currentTweet.like()
-            holder.imgLike.setImageResource(R.drawable.ic_heart_solid)
+            holder.imgLike.setImageResource(R.drawable.ic_baseline_favorite_24)
             holder.tvLike.text = currentTweet.likes.toString()
-
-
+            holder.tvLike.resources.getColor(R.color.red)
+//            holder.tvLike.setTextColor(ge.getColorStateList(R.color.red))
         }
     }
 
